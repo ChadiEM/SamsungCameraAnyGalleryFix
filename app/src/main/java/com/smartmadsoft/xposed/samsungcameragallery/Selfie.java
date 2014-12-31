@@ -31,7 +31,7 @@ public class Selfie implements IXposedHookLoadPackage {
                 String mime = contentResolver.getType(lastUri);
 
                 Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
+                intent.setAction("com.android.camera.action.REVIEW");
                 intent.addCategory(Intent.CATEGORY_DEFAULT);
                 intent.setDataAndType(lastUri, mime);
                 context.startActivity(intent);
