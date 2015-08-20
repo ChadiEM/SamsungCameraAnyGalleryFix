@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
         applicationId "com.smartmadsoft.xposed.samsungcameragallery"
         minSdkVersion 15
-        targetSdkVersion 21
+        targetSdkVersion 19
         versionCode 2
         versionName "0.2"
     }
